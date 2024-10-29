@@ -1,0 +1,46 @@
+#include<stdio.h>
+int main()
+{
+    int n1,n2,e=0,o=0,r;
+    scanf("%d%d",&n1,&n2);
+    while(n1!=0)
+    {
+        r=n1%10;
+        if(r%2==0)
+            e++;
+        else
+            o++;
+        n1=n1/10;
+    }
+    while(n2!=0)
+    {
+        r=n2%10;
+        if(r%2==0)
+            e++;
+        else
+            o++;
+        n2=n2/10;
+    }
+    printf("%d odd numbers\n",o);
+    printf("%d even numbers",e);
+}
+-----------------------------------------------------------------------------------------------------  
+#include<stdio.h>
+int main() {
+    int n,c=0,r,o=0,e=0;
+    for(int i=0;i<2;i++)
+    {
+        scanf("%d",&n);
+    while(n!=0)
+    {
+        r=n%10;
+        if(r%2==0)
+            e++;
+        else
+            o++;
+        n=n/10;
+    }
+    }
+    printf("%d odd numbers\n",o);
+    printf("%d even numbers",e);
+}
